@@ -1,5 +1,6 @@
 package ru.netology.domain;
-public class Book extends Product{
+
+public class Book extends Product {
     private String author;
 
 
