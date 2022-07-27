@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.repository.ProductRepository;
-import org.mockito.Mockito;
 
 public class ProductManagerTest {
 
@@ -30,14 +29,6 @@ public class ProductManagerTest {
     public void shouldFindProductByName() {
         Product[] expected = {product1};
         Product[] actual = manager.searchBy("A");
-
-        Assertions.assertArrayEquals(expected, actual);
-    }
-
-    @Test
-    public void shouldFindProductByAuthor() {
-        Product[] expected = {product4};
-        Product[] actual = manager.searchBy("Apple Inc.");
 
         Assertions.assertArrayEquals(expected, actual);
     }
