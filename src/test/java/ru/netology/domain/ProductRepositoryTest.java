@@ -47,7 +47,7 @@ public class ProductRepositoryTest {
 
 
         Product[] expected = {product1, product2, product3, product4};
-        Product[] actual = repo.findAll();
+        Product[] actual = repo.getProducts();
 
         Assertions.assertArrayEquals(expected, actual);
     }

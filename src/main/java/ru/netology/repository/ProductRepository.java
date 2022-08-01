@@ -31,9 +31,4 @@ public class ProductRepository {
     public Product[] getProducts() {
         return products;
     }
-
-    public Product[] findAll() {
-        return products;
-    }
-
 }
